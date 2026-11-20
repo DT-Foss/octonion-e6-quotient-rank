@@ -1,0 +1,93 @@
+{
+  "exact_Zorn_R22": {
+    "rank": 22,
+    "mismatches": 0,
+    "denoms": [
+      1,
+      2
+    ]
+  },
+  "exact_Qi_Octonion_R22": {
+    "rank": 22,
+    "mismatches": 0,
+    "denoms": [
+      1,
+      2,
+      4
+    ]
+  },
+  "exact_Z_Zorn_R23": {
+    "rank": 23,
+    "n_schemes": 128,
+    "all_verified": true,
+    "scheme20_strict_pm1": true
+  },
+  "zorn_F2_R21": {
+    "rank": 21,
+    "n_schemes": 256,
+    "all_verified": true
+  },
+  "zorn_F3_R22": {
+    "rank": 22,
+    "n_schemes": 256,
+    "all_verified": true
+  },
+  "exact_Fp_Octonion_R22": {
+    "primes_saved": [
+      3,
+      5,
+      7,
+      13
+    ],
+    "primes_certified_total": 12,
+    "rank": 22
+  },
+  "v4_R25_kantorovich": {
+    "rank": 25,
+    "max_512_err": "6.45932e-137",
+    "rk_J": 128,
+    "h": 8.036240179988215e-128
+  },
+  "koszul_T_O_lower_bounds": {
+    "K_1": {
+      "dim": [
+        224,
+        64
+      ],
+      "rank": 64,
+      "denom": 7,
+      "border_rank_lb": 10
+    },
+    "K_2": {
+      "dim": [
+        448,
+        224
+      ],
+      "rank": 224,
+      "denom": 21,
+      "border_rank_lb": 11
+    },
+    "K_3": {
+      "dim": [
+        560,
+        448
+      ],
+      "rank": 448,
+      "denom": 35,
+      "border_rank_lb": 13
+    }
+  },
+  "octo_Z4_from26_pool.json": {
+    "rank": 26,
+    "scale_S": 4,
+    "n_schemes": 512,
+    "min_odd_c": 8
+  },
+  "octo_PURE_Zhalf_B3_pool.json": {
+    "rank": 27,
+    "scale_S": 2,
+    "n_schemes": 512,
+    "min_odd_c": 14
+  },
+  "elapsed_sec": 0.192
+}

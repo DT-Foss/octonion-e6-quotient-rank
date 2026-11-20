@@ -1,0 +1,13 @@
+{
+  "flattening": "Koszul K_5^W (p=5, m=11, dim=12474x12474, C(10,5)=252, sym_syzygy=330, sym_max=12144)",
+  "J3O_TrX3": {
+    "rank_mod_251": 12144,
+    "rank_mod_32749": 12142,
+    "exact_border_rank_lower_bound": 49
+  },
+  "E6_Cartan_det": {
+    "rank_mod_251": 12144,
+    "rank_mod_32749": 12144,
+    "exact_border_rank_lower_bound": 49
+  }
+}

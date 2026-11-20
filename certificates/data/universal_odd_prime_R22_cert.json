@@ -1,0 +1,113 @@
+{
+  "theorem": "Universal Odd-Prime Rank-22 Bound R_{F_p}(T_O) <= 22",
+  "primes_verified": {
+    "3": {
+      "p_mod_4": 3,
+      "split_witness_ab": [
+        1,
+        1
+      ],
+      "rank": 22,
+      "mismatches_512": 0
+    },
+    "5": {
+      "p_mod_4": 1,
+      "split_witness_ab": [
+        0,
+        2
+      ],
+      "rank": 22,
+      "mismatches_512": 0
+    },
+    "7": {
+      "p_mod_4": 3,
+      "split_witness_ab": [
+        2,
+        3
+      ],
+      "rank": 22,
+      "mismatches_512": 0
+    },
+    "11": {
+      "p_mod_4": 3,
+      "split_witness_ab": [
+        1,
+        3
+      ],
+      "rank": 22,
+      "mismatches_512": 0
+    },
+    "13": {
+      "p_mod_4": 1,
+      "split_witness_ab": [
+        0,
+        5
+      ],
+      "rank": 22,
+      "mismatches_512": 0
+    },
+    "17": {
+      "p_mod_4": 1,
+      "split_witness_ab": [
+        0,
+        4
+      ],
+      "rank": 22,
+      "mismatches_512": 0
+    },
+    "19": {
+      "p_mod_4": 3,
+      "split_witness_ab": [
+        1,
+        6
+      ],
+      "rank": 22,
+      "mismatches_512": 0
+    },
+    "23": {
+      "p_mod_4": 3,
+      "split_witness_ab": [
+        2,
+        8
+      ],
+      "rank": 22,
+      "mismatches_512": 0
+    },
+    "29": {
+      "p_mod_4": 1,
+      "split_witness_ab": [
+        0,
+        12
+      ],
+      "rank": 22,
+      "mismatches_512": 0
+    },
+    "31": {
+      "p_mod_4": 3,
+      "split_witness_ab": [
+        4,
+        13
+      ],
+      "rank": 22,
+      "mismatches_512": 0
+    },
+    "37": {
+      "p_mod_4": 1,
+      "split_witness_ab": [
+        0,
+        6
+      ],
+      "rank": 22,
+      "mismatches_512": 0
+    },
+    "41": {
+      "p_mod_4": 1,
+      "split_witness_ab": [
+        0,
+        9
+      ],
+      "rank": 22,
+      "mismatches_512": 0
+    }
+  }
+}

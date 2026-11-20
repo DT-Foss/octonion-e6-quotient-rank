@@ -1,0 +1,42 @@
+{
+  "1": {
+    "p": 1,
+    "exact_mod_rank": 728,
+    "rank_per_cube": 26,
+    "ratio": 28.0,
+    "border_waring_lower_bound": 28,
+    "n_blocks": 110,
+    "max_blk_cols": 27,
+    "sec": 0.576
+  },
+  "2": {
+    "p": 2,
+    "exact_mod_rank": 9450,
+    "rank_per_cube": 325,
+    "ratio": 29.076923,
+    "border_waring_lower_bound": 30,
+    "n_blocks": 216,
+    "max_blk_cols": 184,
+    "sec": 0.171
+  },
+  "3": {
+    "p": 3,
+    "exact_mod_rank": 78624,
+    "rank_per_cube": 2600,
+    "ratio": 30.24,
+    "border_waring_lower_bound": 31,
+    "n_blocks": 282,
+    "max_blk_cols": 1271,
+    "sec": 2.287
+  },
+  "4": {
+    "p": 4,
+    "exact_mod_rank": 470925,
+    "rank_per_cube": 14950,
+    "ratio": 31.5,
+    "border_waring_lower_bound": 32,
+    "n_blocks": 368,
+    "max_blk_cols": 7632,
+    "sec": 81.372
+  }
+}

@@ -1,0 +1,432 @@
+{
+  "bridge": "Formula-Web Final Bridge 12 \u2014 Unitarity Boundary (tau = 1) & Linear Cheeger Improvement (gamma >= c*phi)",
+  "source_pdfs": [
+    "Foss_2026_Unitarity_Is_the_Boundary-1.pdf (media_1795124384444_7a73b978.pdf, March 10, 2026)",
+    "Foss_2026_Linear_Cheeger_Improvement_Foss_Gap_Theorem-1.pdf (media_1795124384435_986c50ca.pdf, March 10, 2026)"
+  ],
+  "extracted_canonical_theorems": {
+    "foss_boundary_theorem": "PS(Q) holds (12/21 = 57%, 0 exceptions) <=> Q requires only Markovianity + Z_2 topology (L-BPP); fails (9/21 = 43%) <=> Q requires unitarity (|z|=1, tau=1), Lorentz symmetry, or conservation laws (BQP \\ L-BPP).",
+    "three_laws_of_ps_lifted": {
+      "Law_1_Contraction": "lambda_max < 0 (-0.024 +- 0.005 on BA), h_KS = 0, Foss Krylov Contraction b_n ~ n^(-alpha) -> 0 (3rd Krylov complexity class).",
+      "Law_2_NESS": "Broken detailed balance, sigma < 0 (-0.016), driving Inverted MIPT and Zeno/Anti-Zeno transition at k* ~ 3 (k_best = 5, 41% speedup).",
+      "Law_3_Topological_Protection": "Gapped cross-copy SVD (Delta_xi > 0.01), Li-Haldane r = 0.91, size-independent Foss Topological Index F = S_ent/ln(n) = 0.75 +- 0.05, 80% erasure tolerance."
+    },
+    "foss_margolus_levitin_constant": "kappa_FML = Delta_phi / KL = 0.027 +- 0.001",
+    "foss_community_depth_theorem": "t_conv(G) ~ d_comm(G) / Delta_Lifted (1.37 ln n - 0.62 on BA(n,3), O(1) on bounded-depth real networks)",
+    "foss_gap_theorem_linear_cheeger": "gamma(W) >= c_1 * phi(G) * p_c * (1 - p_c) (proved c_1 = 1/4 via Fill's inequality; empirical gamma = 0.60 * phi(G), RMSE = 0.019 vs quadratic 2.49 * phi^2, RMSE = 0.044; optimal p_c = 0.65)",
+    "barbell_beyond_clp": "gamma_Foss(B_n) = Theta(n^-0.40) vs CLP Omega(n^-1) and reversible Theta(n^-2) (n^0.60 improvement over CLP)"
+  },
+  "part_12A_metis_and_snap_verification": {
+    "snap_email_eu_core_live": {
+      "n_lcc": 986,
+      "undirected_edges": 16064,
+      "min_deg": 1,
+      "max_deg": 345,
+      "cheeger_phi_fiedler_sweep": 0.278101,
+      "cheeger_phi_median_split": 0.413349,
+      "gamma_reversible": 0.21215,
+      "cheeger_quadratic_lb_phi2_div2": 0.03867,
+      "gamma_PS_Lifted_live_1972x1972": 0.149563,
+      "linear_cheeger_ratio_gamma_over_phi": 0.5378,
+      "foss_topological_index_F": 0.7254,
+      "cross_copy_entanglement_gap_rel": 0.0956,
+      "krylov_lanczos_b1_to_b12": [
+        0.52219,
+        0.30706,
+        0.54518,
+        0.45385,
+        0.52055,
+        0.44239,
+        0.5229,
+        0.49412,
+        0.54138,
+        0.43998,
+        0.43929,
+        0.441
+      ],
+      "krylov_contraction_ratio_b12_over_b1": 0.8445
+    },
+    "barbell_exact_bridge_funnel": {
+      "fitted_exponent_alpha_n20_to_200": 0.5506,
+      "fitted_prefactor": 1.0694,
+      "r2_loglog": 0.995155,
+      "exact_mechanism": "|F_{b_L}| == 1 sends 100% of p_c=0.65 across single bridge edge (killing 1/m clique dilution), fed by intra-clique harmonic Fiedler funnel sum_{k=1}^{m-1} p_c/k = p_c H_{m-1}",
+      "rows": [
+        {
+          "n": 20,
+          "gamma_orig": 0.0186354,
+          "gamma_CLP_sqrt": 0.136511,
+          "gamma_PS_Lifted": 0.215318,
+          "gain_over_CLP": 1.577,
+          "bridge_forward_outdeg_F_bL": 1,
+          "harmonic_intra_clique_capture": 0.204314
+        },
+        {
+          "n": 32,
+          "gamma_orig": 0.0074289,
+          "gamma_CLP_sqrt": 0.086191,
+          "gamma_PS_Lifted": 0.156564,
+          "gain_over_CLP": 1.816,
+          "bridge_forward_outdeg_F_bL": 1,
+          "harmonic_intra_clique_capture": 0.14379
+        },
+        {
+          "n": 50,
+          "gamma_orig": 0.0030905,
+          "gamma_CLP_sqrt": 0.055592,
+          "gamma_PS_Lifted": 0.120355,
+          "gain_over_CLP": 2.165,
+          "bridge_forward_outdeg_F_bL": 1,
+          "harmonic_intra_clique_capture": 0.102266
+        },
+        {
+          "n": 64,
+          "gamma_orig": 0.0018991,
+          "gamma_CLP_sqrt": 0.043579,
+          "gamma_PS_Lifted": 0.105177,
+          "gain_over_CLP": 2.413,
+          "bridge_forward_outdeg_F_bL": 1,
+          "harmonic_intra_clique_capture": 0.084442
+        },
+        {
+          "n": 100,
+          "gamma_orig": 0.0007852,
+          "gamma_CLP_sqrt": 0.028022,
+          "gamma_PS_Lifted": 0.083586,
+          "gain_over_CLP": 2.983,
+          "bridge_forward_outdeg_F_bL": 1,
+          "harmonic_intra_clique_capture": 0.059418
+        },
+        {
+          "n": 128,
+          "gamma_orig": 0.0004811,
+          "gamma_CLP_sqrt": 0.021934,
+          "gamma_PS_Lifted": 0.074062,
+          "gain_over_CLP": 3.377,
+          "bridge_forward_outdeg_F_bL": 1,
+          "harmonic_intra_clique_capture": 0.048784
+        },
+        {
+          "n": 200,
+          "gamma_orig": 0.0001981,
+          "gamma_CLP_sqrt": 0.014074,
+          "gamma_PS_Lifted": 0.060029,
+          "gain_over_CLP": 4.265,
+          "bridge_forward_outdeg_F_bL": 1,
+          "harmonic_intra_clique_capture": 0.033993
+        }
+      ]
+    },
+    "metis_iteration_scaling_verification": [
+      {
+        "name": "lat4d_N512_C2 (#68)",
+        "N": 512,
+        "C": 2,
+        "kappa_raw": 4350000000000000.0,
+        "kappa_safe": 12.0,
+        "actual_calls": 12,
+        "phi_bulk_proxy_1_over_sqrt_ks": 0.2887,
+        "rho_poly12_ideal": 0.0016,
+        "rho_total_int8": 0.05218,
+        "predicted_calls_pure_law": 12,
+        "reversible_bulk_sweeps_quadratic_cheeger": 208,
+        "unsplit_reversible_sweeps_capped": 75121838658930736
+      },
+      {
+        "name": "zeno3d_N512_wh1e-14 (#68)",
+        "N": 512,
+        "C": 2,
+        "kappa_raw": 2010000000000000.0,
+        "kappa_safe": 12.79,
+        "actual_calls": 12,
+        "phi_bulk_proxy_1_over_sqrt_ks": 0.2796,
+        "rho_poly12_ideal": 0.002027,
+        "rho_total_int8": 0.0522,
+        "predicted_calls_pure_law": 12,
+        "reversible_bulk_sweeps_quadratic_cheeger": 221,
+        "unsplit_reversible_sweeps_capped": 34711470276885236
+      },
+      {
+        "name": "exp_N256_C4 (#68)",
+        "N": 256,
+        "C": 4,
+        "kappa_raw": 871000000000000.0,
+        "kappa_safe": 14.8,
+        "actual_calls": 13,
+        "phi_bulk_proxy_1_over_sqrt_ks": 0.2599,
+        "rho_poly12_ideal": 0.003373,
+        "rho_total_int8": 0.06021,
+        "predicted_calls_pure_law": 13,
+        "reversible_bulk_sweeps_quadratic_cheeger": 256,
+        "unsplit_reversible_sweeps_capped": 15041637119983602
+      },
+      {
+        "name": "exp_N512_C4 (#68)",
+        "N": 512,
+        "C": 4,
+        "kappa_raw": 1740000000000000.0,
+        "kappa_safe": 16.2,
+        "actual_calls": 13,
+        "phi_bulk_proxy_1_over_sqrt_ks": 0.2485,
+        "rho_poly12_ideal": 0.004529,
+        "rho_total_int8": 0.06028,
+        "predicted_calls_pure_law": 13,
+        "reversible_bulk_sweeps_quadratic_cheeger": 280,
+        "unsplit_reversible_sweeps_capped": 30048735463572296
+      },
+      {
+        "name": "exp_N512_C8 (#68)",
+        "N": 512,
+        "C": 8,
+        "kappa_raw": 17200000000000.0,
+        "kappa_safe": 19.5,
+        "actual_calls": 15,
+        "phi_bulk_proxy_1_over_sqrt_ks": 0.2265,
+        "rho_poly12_ideal": 0.007925,
+        "rho_total_int8": 0.06853,
+        "predicted_calls_pure_law": 13,
+        "reversible_bulk_sweeps_quadratic_cheeger": 337,
+        "unsplit_reversible_sweeps_capped": 297033476996232
+      },
+      {
+        "name": "eigfree_fisher_N512_r32 (#68)",
+        "N": 512,
+        "C": 4,
+        "kappa_raw": 2630000.0,
+        "kappa_safe": 19.26,
+        "actual_calls": 15,
+        "phi_bulk_proxy_1_over_sqrt_ks": 0.2279,
+        "rho_poly12_ideal": 0.007648,
+        "rho_total_int8": 0.0606,
+        "predicted_calls_pure_law": 13,
+        "reversible_bulk_sweeps_quadratic_cheeger": 333,
+        "unsplit_reversible_sweeps_capped": 45418491
+      },
+      {
+        "name": "exp_N1024_C4_2ELF (#68)",
+        "N": 1024,
+        "C": 4,
+        "kappa_raw": 3480000000000000.0,
+        "kappa_safe": 26.5,
+        "actual_calls": 16,
+        "phi_bulk_proxy_1_over_sqrt_ks": 0.1943,
+        "rho_poly12_ideal": 0.01779,
+        "rho_total_int8": 0.06269,
+        "predicted_calls_pure_law": 13,
+        "reversible_bulk_sweeps_quadratic_cheeger": 458,
+        "unsplit_reversible_sweeps_capped": 60097470927144592
+      },
+      {
+        "name": "exp_N2048_C4_4ELF (#81)",
+        "N": 2048,
+        "C": 4,
+        "kappa_raw": 6930000000000000.0,
+        "kappa_safe": 34.43,
+        "actual_calls": 17,
+        "phi_bulk_proxy_1_over_sqrt_ks": 0.1704,
+        "rho_poly12_ideal": 0.032142,
+        "rho_total_int8": 0.06817,
+        "predicted_calls_pure_law": 13,
+        "reversible_bulk_sweeps_quadratic_cheeger": 595,
+        "unsplit_reversible_sweeps_capped": 119676860208365520
+      },
+      {
+        "name": "exp_N4096_C8_w1e-12 (#104)",
+        "N": 4096,
+        "C": 8,
+        "kappa_raw": 2.72e+16,
+        "kappa_safe": 35.8,
+        "actual_calls": 18,
+        "phi_bulk_proxy_1_over_sqrt_ks": 0.1671,
+        "rho_poly12_ideal": 0.034864,
+        "rho_total_int8": 0.07648,
+        "predicted_calls_pure_law": 14,
+        "reversible_bulk_sweeps_quadratic_cheeger": 619,
+        "unsplit_reversible_sweeps_capped": 469727358970785280
+      },
+      {
+        "name": "exp_N4096_C8_w1e-13 (#104)",
+        "N": 4096,
+        "C": 8,
+        "kappa_raw": 2.72e+17,
+        "kappa_safe": 35.8,
+        "actual_calls": 18,
+        "phi_bulk_proxy_1_over_sqrt_ks": 0.1671,
+        "rho_poly12_ideal": 0.034864,
+        "rho_total_int8": 0.07648,
+        "predicted_calls_pure_law": 14,
+        "reversible_bulk_sweeps_quadratic_cheeger": 619,
+        "unsplit_reversible_sweeps_capped": 1000000000000000000
+      },
+      {
+        "name": "snap_eu_n986_w1e-12 (#104)",
+        "N": 986,
+        "C": 2,
+        "kappa_raw": 19400000000000.0,
+        "kappa_safe": 44.83,
+        "actual_calls": 24,
+        "phi_bulk_proxy_1_over_sqrt_ks": 0.1494,
+        "rho_poly12_ideal": 0.053983,
+        "rho_total_int8": 0.07506,
+        "predicted_calls_pure_law": 14,
+        "reversible_bulk_sweeps_quadratic_cheeger": 775,
+        "unsplit_reversible_sweeps_capped": 335026131030634
+      },
+      {
+        "name": "snap_eu_n986_w1e-14 (#104)",
+        "N": 986,
+        "C": 2,
+        "kappa_raw": 1940000000000000.0,
+        "kappa_safe": 44.83,
+        "actual_calls": 24,
+        "phi_bulk_proxy_1_over_sqrt_ks": 0.1494,
+        "rho_poly12_ideal": 0.053983,
+        "rho_total_int8": 0.07506,
+        "predicted_calls_pure_law": 14,
+        "reversible_bulk_sweeps_quadratic_cheeger": 775,
+        "unsplit_reversible_sweeps_capped": 33502613103063364
+      },
+      {
+        "name": "snap_eu_n986_Gcut1e-12 (#104)",
+        "N": 986,
+        "C": 2,
+        "kappa_raw": 9.11e+16,
+        "kappa_safe": 44.83,
+        "actual_calls": 24,
+        "phi_bulk_proxy_1_over_sqrt_ks": 0.1494,
+        "rho_poly12_ideal": 0.053983,
+        "rho_total_int8": 0.07506,
+        "predicted_calls_pure_law": 14,
+        "reversible_bulk_sweeps_quadratic_cheeger": 775,
+        "unsplit_reversible_sweeps_capped": 1000000000000000000
+      }
+    ]
+  },
+  "part_12B_unitarity_birkhoff_boundary": {
+    "hurwitz_S8_unitary_boundary": {
+      "U8_all_eigenvalues_on_S1": true,
+      "P_S8_exact_formula": "(1/7)(J_8 - I_8)",
+      "P_S8_rho_perp": 0.142857,
+      "P_S8_spectral_gap": 0.857143,
+      "P_S8_squared_birkhoff_hopf_tau": 0.076923,
+      "magic_zero_angle_deg_cos2_eq_1_8": 69.2952,
+      "theta_boundary_crossover_table": [
+        {
+          "theta_deg": 0,
+          "unitary_max_eig_mod": 1.0,
+          "unitary_min_eig_mod": 1.0,
+          "birkhoff_P_rho_perp": 1.0,
+          "birkhoff_hopf_tau": 1.0,
+          "unitary_krylov_b1_b2": [
+            0.0
+          ],
+          "birkhoff_krylov_b1_b2": [
+            0.0
+          ]
+        },
+        {
+          "theta_deg": 15,
+          "unitary_max_eig_mod": 1.0,
+          "unitary_min_eig_mod": 1.0,
+          "birkhoff_P_rho_perp": 0.923443,
+          "birkhoff_hopf_tau": 0.979695,
+          "unitary_krylov_b1_b2": [
+            0.25882,
+            0.0
+          ],
+          "birkhoff_krylov_b1_b2": [
+            0.0
+          ]
+        },
+        {
+          "theta_deg": 30,
+          "unitary_max_eig_mod": 1.0,
+          "unitary_min_eig_mod": 1.0,
+          "birkhoff_P_rho_perp": 0.714286,
+          "birkhoff_hopf_tau": 0.909091,
+          "unitary_krylov_b1_b2": [
+            0.5,
+            0.0
+          ],
+          "birkhoff_krylov_b1_b2": [
+            0.0
+          ]
+        },
+        {
+          "theta_deg": 45,
+          "unitary_max_eig_mod": 1.0,
+          "unitary_min_eig_mod": 1.0,
+          "birkhoff_P_rho_perp": 0.428571,
+          "birkhoff_hopf_tau": 0.75,
+          "unitary_krylov_b1_b2": [
+            0.70711,
+            0.0
+          ],
+          "birkhoff_krylov_b1_b2": [
+            0.0
+          ]
+        },
+        {
+          "theta_deg": 60,
+          "unitary_max_eig_mod": 1.0,
+          "unitary_min_eig_mod": 1.0,
+          "birkhoff_P_rho_perp": 0.142857,
+          "birkhoff_hopf_tau": 0.4,
+          "unitary_krylov_b1_b2": [
+            0.86603,
+            0.0
+          ],
+          "birkhoff_krylov_b1_b2": [
+            0.0
+          ]
+        },
+        {
+          "theta_deg": 68.529,
+          "unitary_max_eig_mod": 1.0,
+          "unitary_min_eig_mod": 1.0,
+          "birkhoff_P_rho_perp": 0.010261,
+          "birkhoff_hopf_tau": 0.039817,
+          "unitary_krylov_b1_b2": [
+            0.9306,
+            0.0
+          ],
+          "birkhoff_krylov_b1_b2": [
+            0.0
+          ]
+        },
+        {
+          "theta_deg": 90,
+          "unitary_max_eig_mod": 1.0,
+          "unitary_min_eig_mod": 1.0,
+          "birkhoff_P_rho_perp": 0.142857,
+          "birkhoff_hopf_tau": 1.0,
+          "unitary_krylov_b1_b2": [
+            1.0,
+            0.0
+          ],
+          "birkhoff_krylov_b1_b2": [
+            0.0
+          ]
+        }
+      ]
+    },
+    "e8_2Ox_born_decoherence_dichotomy": {
+      "total_roots": 240,
+      "axis_roots_count": 16,
+      "axis_born_group_order": 8,
+      "axis_born_group_is_abelian_Z2_cubed": true,
+      "axis_born_barrington_NC1_capable": false,
+      "hamming_superposition_roots_count": 224,
+      "hamming_P_entries_exact": "{0, 1/4}",
+      "hamming_rho_perp_distribution": {
+        "0.5": 128,
+        "1.0": 96
+      },
+      "two_step_mixed_product_P16_P35_exact_uniform_J8_div_8": true,
+      "two_step_mixed_product_rho_perp": 0.0,
+      "two_step_mixed_product_birkhoff_hopf_tau": 0.0,
+      "catalan_separation_after_born_quotient_pct": 0.0
+    }
+  },
+  "elapsed_sec": 0.2543
+}

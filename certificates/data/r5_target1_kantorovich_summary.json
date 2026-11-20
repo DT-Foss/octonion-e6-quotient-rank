@@ -1,0 +1,51 @@
+{
+  "modular_sub100_border_rank": {
+    "W_border_C_upper_bound": 95,
+    "group": "G21 = F_21",
+    "neq_invariant_dim": 304,
+    "nvar": 309,
+    "recipe": "1x21f + 8x7c + 18x1",
+    "verified_3654x309_rank_by_prime": {
+      "1000003": 304,
+      "1000033": 304
+    }
+  },
+  "kantorovich_certificates": {
+    "r5_certified_real_true53_G126_det_W122.json": {
+      "polynomial": "det(X)",
+      "weight_per_cube_for_standard_normalization": 1.0,
+      "field": "R cap Q_bar (Real-Algebraic)",
+      "waring_rank": 122,
+      "symmetry_group": "G126 = S_3 x F_21",
+      "recipe": "42c+42d+21+2x6+3+2x1",
+      "neq_all_invariant_equations": 53,
+      "jacobian_square_dimension": "53x53",
+      "jacobian_full_rank_verified": 53,
+      "dropped_equations_count": 0,
+      "closes_r4_audit_95_full_rank_gate": true,
+      "flint_150digit_max_all_3654_monomial_err_upper": "5.569489424e-154",
+      "kantorovich_beta_Jinv_inf_upper": "328.2035422",
+      "kantorovich_eta_newton_step_inf_upper": "1.505904410e-152",
+      "kantorovich_M2_hessian_ball_inf_upper": "932.9217105",
+      "kantorovich_h_upper": "4.610901757e-147"
+    },
+    "r5_certified_real_true53_G126_tr3_W122.json": {
+      "polynomial": "Tr(X^3) [2*Tr(X^3) unweighted cubes, i.e. weight 1/2 per cube]",
+      "weight_per_cube_for_standard_normalization": 0.5,
+      "field": "R cap Q_bar (Real-Algebraic)",
+      "waring_rank": 122,
+      "symmetry_group": "G126 = S_3 x F_21",
+      "recipe": "42c+42d+21+2x6+3+2x1",
+      "neq_all_invariant_equations": 53,
+      "jacobian_square_dimension": "53x53",
+      "jacobian_full_rank_verified": 53,
+      "dropped_equations_count": 0,
+      "closes_r4_audit_95_full_rank_gate": true,
+      "flint_150digit_max_all_3654_monomial_err_upper": "3.797246784e-153",
+      "kantorovich_beta_Jinv_inf_upper": "14.83500910",
+      "kantorovich_eta_newton_step_inf_upper": "9.047371144e-153",
+      "kantorovich_M2_hessian_ball_inf_upper": "1556.682257",
+      "kantorovich_h_upper": "2.089345196e-148"
+    }
+  }
+}

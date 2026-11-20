@@ -1,0 +1,415 @@
+{
+  "suite": "Paper 2 Standalone Cold-Verification Suite (Octonion, E_6 Cartan Cubic, E_8 Born, 0-ULP Silicon)",
+  "author": "David Tom Foss (DT-Foss)",
+  "license": "PolyForm Noncommercial License 1.0.0",
+  "overall_pass": true,
+  "gates": {
+    "Gate_1_Axioms": {
+      "pass": true,
+      "elapsed_s": 0.002,
+      "T_O_nnz": 64,
+      "T_Zorn_nnz": 32,
+      "J3O_monomials": 3654
+    },
+    "Gate_2_Octonion_Exact_Ranks": {
+      "pass": true,
+      "elapsed_s": 0.096,
+      "result": {
+        "R_F2_T_Zorn": {
+          "rank": 21,
+          "schemes_verified": 256,
+          "mismatches": 0
+        },
+        "R_Zhalf_T_Zorn": {
+          "rank": 22,
+          "mismatches": 0,
+          "denominators": [
+            1,
+            2
+          ]
+        },
+        "R_Zi_quarter_T_O": {
+          "rank": 22,
+          "mismatches": 0,
+          "denominators": [
+            1,
+            2,
+            4
+          ]
+        },
+        "R_Z_T_Zorn": {
+          "rank": 23,
+          "schemes_verified": 128,
+          "scheme20_max_abs": 1,
+          "scheme20_nnz": 176,
+          "mismatches": 0
+        },
+        "R_Fp_T_O_all_12_odd_primes": {
+          "3": {
+            "p_mod_4": 3,
+            "ab": [
+              1,
+              1
+            ],
+            "rank": 22,
+            "mismatches": 0
+          },
+          "5": {
+            "p_mod_4": 1,
+            "ab": [
+              0,
+              2
+            ],
+            "rank": 22,
+            "mismatches": 0
+          },
+          "7": {
+            "p_mod_4": 3,
+            "ab": [
+              2,
+              3
+            ],
+            "rank": 22,
+            "mismatches": 0
+          },
+          "11": {
+            "p_mod_4": 3,
+            "ab": [
+              1,
+              3
+            ],
+            "rank": 22,
+            "mismatches": 0
+          },
+          "13": {
+            "p_mod_4": 1,
+            "ab": [
+              0,
+              5
+            ],
+            "rank": 22,
+            "mismatches": 0
+          },
+          "17": {
+            "p_mod_4": 1,
+            "ab": [
+              0,
+              4
+            ],
+            "rank": 22,
+            "mismatches": 0
+          },
+          "19": {
+            "p_mod_4": 3,
+            "ab": [
+              1,
+              6
+            ],
+            "rank": 22,
+            "mismatches": 0
+          },
+          "23": {
+            "p_mod_4": 3,
+            "ab": [
+              2,
+              8
+            ],
+            "rank": 22,
+            "mismatches": 0
+          },
+          "29": {
+            "p_mod_4": 1,
+            "ab": [
+              0,
+              12
+            ],
+            "rank": 22,
+            "mismatches": 0
+          },
+          "31": {
+            "p_mod_4": 3,
+            "ab": [
+              4,
+              13
+            ],
+            "rank": 22,
+            "mismatches": 0
+          },
+          "37": {
+            "p_mod_4": 1,
+            "ab": [
+              0,
+              6
+            ],
+            "rank": 22,
+            "mismatches": 0
+          },
+          "41": {
+            "p_mod_4": 1,
+            "ab": [
+              0,
+              9
+            ],
+            "rank": 22,
+            "mismatches": 0
+          }
+        },
+        "R_Zquarter_T_O": {
+          "rank": 26,
+          "mismatches": 0,
+          "denominators": [
+            1,
+            2,
+            4
+          ]
+        },
+        "R_Zhalf_T_O": {
+          "rank": 27,
+          "schemes_verified": 32,
+          "mismatches": 0
+        },
+        "koszul_T_O_lower_bounds": {
+          "K_1": {
+            "rank": 64,
+            "denom": 7,
+            "border_rank_lb": 10
+          },
+          "K_2": {
+            "rank": 224,
+            "denom": 21,
+            "border_rank_lb": 11
+          },
+          "K_3": {
+            "rank": 448,
+            "denom": 35,
+            "border_rank_lb": 13
+          }
+        }
+      }
+    },
+    "Gate_3_V4_R25_Kantorovich_160d": {
+      "pass": true,
+      "elapsed_s": 7.682,
+      "result": {
+        "rank": 25,
+        "symmetry": "V_4 <= Z_2^3 <= G_2 [6*4 + 1 = 25]",
+        "square_jacobian": "128x128",
+        "non_invariant_entries_identically_zero": 384,
+        "max_512_err_upper": "6.45932e-137",
+        "neumann_defect_upper": "1.241e-161",
+        "beta_inf_upper": "929.226",
+        "eta_inf_upper": "9.58099e-137",
+        "M2_inf_upper": "156.301",
+        "kantorovich_h_upper": "1.39153e-131",
+        "certified_h_lt_half": true
+      }
+    },
+    "Gate_4_Exact_Q_Waring_W132_J3H55": {
+      "pass": true,
+      "elapsed_s": 0.939,
+      "result": {
+        "det_X_W132": {
+          "W_Q": 132,
+          "beats_AH_136_by": 4,
+          "monomial_mismatches_3654": 0,
+          "tensor_mismatches_19683": 0,
+          "vec_denom_lcm": 252,
+          "wt_denom_lcm": 24004512
+        },
+        "Tr_X3_W132": {
+          "W_Q": 132,
+          "beats_AH_136_by": 4,
+          "monomial_mismatches_3654": 0,
+          "tensor_mismatches_19683": 0,
+          "vec_denom_lcm": 252,
+          "wt_denom_lcm": 8001504
+        },
+        "det_X_W140": {
+          "W_Q": 140,
+          "monomial_mismatches_3654": 0
+        },
+        "Tr_X3_W140": {
+          "W_Q": 140,
+          "monomial_mismatches_3654": 0
+        },
+        "det_X_W156": {
+          "W_Q": 156,
+          "monomial_mismatches_3654": 0
+        },
+        "Tr_X3_W156": {
+          "W_Q": 156,
+          "monomial_mismatches_3654": 0
+        },
+        "det_J3H_W55": {
+          "W_Q": 55,
+          "monomial_mismatches_680": 0
+        }
+      }
+    },
+    "Gate_5_O8_Norm_Distance_Obstruction": {
+      "pass": true,
+      "elapsed_s": 0.003,
+      "result": {
+        "Qi_R22_dist_F_modes": [
+          2.6972,
+          2.5216,
+          2.7074
+        ],
+        "Qi_R22_dist_inf_modes": [
+          1.1817,
+          1.0041,
+          1.126
+        ],
+        "Zorn_R22_dist_F_modes": [
+          1.3486,
+          1.2608,
+          1.3537
+        ],
+        "Zorn_R22_dist_inf_modes": [
+          0.5652,
+          0.4621,
+          0.5528
+        ],
+        "V4_R25_dist_F_modes": [
+          1.7278,
+          1.4916,
+          1.3539
+        ],
+        "V4_R25_dist_inf_modes": [
+          1.0295,
+          0.6113,
+          0.9353
+        ],
+        "obstruction_proved_m_eq_0": true
+      }
+    },
+    "Gate_6_W122_Square53_Kantorovich_160d": {
+      "pass": true,
+      "elapsed_s": 14.571,
+      "result": {
+        "group_order": 126,
+        "molien_invariant_dim": 53,
+        "det_W122": {
+          "W": 122,
+          "square_jacobian": "53x53",
+          "dropped_equations": 0,
+          "zero_dropped_mod_ranks": [
+            53,
+            53,
+            53
+          ],
+          "max_3654_err_upper": "2.78501e-129",
+          "beta_inf_upper": "328.204",
+          "eta_inf_upper": "4.19055e-130",
+          "M2_inf_upper": "932.922",
+          "kantorovich_h_upper": "1.2831e-124",
+          "max_abs_L": 1.0667,
+          "certified_h_lt_half": true
+        },
+        "tr3_W122": {
+          "W": 122,
+          "square_jacobian": "53x53",
+          "dropped_equations": 0,
+          "zero_dropped_mod_ranks": [
+            53,
+            53,
+            53
+          ],
+          "max_3654_err_upper": "7.37913e-129",
+          "beta_inf_upper": "14.835",
+          "eta_inf_upper": "4.73863e-130",
+          "M2_inf_upper": "1556.68",
+          "kantorovich_h_upper": "1.09431e-125",
+          "max_abs_L": 2.7429,
+          "certified_h_lt_half": true
+        }
+      }
+    },
+    "Gate_7_W95_Three_Prime_Terracini": {
+      "pass": true,
+      "elapsed_s": 4.622,
+      "result": {
+        "W_border_C_upper_bound": 95,
+        "group": "G21 = Z_7 rtimes Z_3",
+        "recipe": "1x21f + 8x7c + 18x1",
+        "nvar": 309,
+        "molien_dim": 304,
+        "G21_invariance_of_det_and_Tr3_verified": true,
+        "three_prime_terracini_ranks": {
+          "1000003": 304,
+          "1000033": 304,
+          "999983": 304
+        }
+      }
+    },
+    "Gate_8_Post_Koszul_And_Borel_Cactus": {
+      "pass": true,
+      "elapsed_s": 6.503,
+      "result": {
+        "universal_koszul_ceiling": 51,
+        "universal_koszul_exact_max_ratio": "252/5",
+        "substitution_koszul_strict_loss_all_p": true,
+        "e6_lie_algebra_dim": 78,
+        "e6_apolar_deg2_351_dim": 351,
+        "min_r_touching_mult4_weight": 52,
+        "borel_survivors_r_le_45": 0,
+        "borel_cactus_onset_r": 46,
+        "borel_non_smoothable_ideals_at_r46": 3,
+        "certified_K5W_det_lower_bound": 49
+      }
+    },
+    "Gate_9_E8_Born_Decoherence_And_Mstar2": {
+      "pass": true,
+      "elapsed_s": 0.266,
+      "result": {
+        "coxeter_2Ox_order": 240,
+        "paige_Mstar2_order": 120,
+        "born_split": {
+          "axis_Z2_cubed": 16,
+          "D8_bipartite_rho1": 96,
+          "S16_spinor_rho05": 128
+        },
+        "two_step_exact_uniform_J8_div8": true,
+        "distinct_hamming_born_matrices": 14,
+        "two_step_uniform_pairs": 120,
+        "magic_angle_deg": 69.2952,
+        "Mstar2_k2_ord5": 0,
+        "Mstar2_k3_ord5": 604800,
+        "Mstar2_k3_ord5_fraction": "7/20 (35.0%)",
+        "Strahler_k2_Hankel_rank": 64
+      }
+    },
+    "Gate_10_Cpp17_0ULP_Silicon_Bench": {
+      "pass": true,
+      "elapsed_s": 3.596,
+      "result": {
+        "compiler": "clang++ -O3 -march=native -std=c++17",
+        "kernels_verified_0ulp": 13,
+        "basis_and_100k_errors": 0,
+        "D32_block_gemm_errors": 0,
+        "live_D1_ns": {
+          "Octo_Qi_Naive_64": 29.3,
+          "Octo_Qi_Cariow_30": 35.764,
+          "Octo_Qi_ButterflyZorn_R23": 27.545,
+          "Octo_Qi_ButterflyZorn_R22": 34.122,
+          "Zorn_PureZ_R23": 5.413,
+          "Octo_Z_Dyadic_R26": 10.283
+        },
+        "live_D32_block_gemm": {
+          "zorn_r23_err": 0,
+          "zorn_sparse32_us": 290.38,
+          "zorn_r23_us": 214.75,
+          "zorn_r23_speedup_vs_32": 1.352,
+          "qi_r22_err": 0,
+          "qi_c30_err": 0,
+          "qi_naive64_us": 1542.88,
+          "qi_cariow30_us": 879.92,
+          "qi_bfly_r22_us": 645.79,
+          "qi_r22_speedup_vs_naive64": 2.389,
+          "qi_r22_speedup_vs_cariow30": 1.363
+        }
+      }
+    }
+  },
+  "total_elapsed_s": 38.28
+}
